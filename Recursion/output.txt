@@ -1,6 +1,4 @@
-
-How many times you want the name be printed: Tanveer Kaur
-Tanveer Kaur
-Tanveer Kaur
-Tanveer Kaur
-Tanveer Kaur
+0
+1
+2
+3
