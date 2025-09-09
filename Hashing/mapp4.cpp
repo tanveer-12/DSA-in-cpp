@@ -15,6 +15,10 @@ int main(){
     for(int i=0; i<n;i++){
         mpp[arr[i]]++;
     }
+    //iterate in the map
+    for(auto itr: mpp){
+        std::cout<<itr.first << "->" <<itr.second<<std::endl;
+    }
 
     int q;
     std::cin>>q;
