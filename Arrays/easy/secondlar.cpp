@@ -2,6 +2,8 @@
 
 #include <bits/stdc++.h>
 
+
+// TC - O(n) because only one pass here (for loop)
 int secondLargest(std::vector<int> & arr, int n){
     int largest = arr[0];
     int slargest = -1;
@@ -17,6 +19,7 @@ int secondLargest(std::vector<int> & arr, int n){
     return slargest;
 }
 
+// TC -> O(n)
 int secondSmallest(std::vector<int> &arr, int n){
     int smallest = arr[0];
     int ssmallest= INT_MAX;
