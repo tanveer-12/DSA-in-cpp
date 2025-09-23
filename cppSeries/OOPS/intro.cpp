@@ -46,6 +46,16 @@ namespace Foos{
 };
 // if your class type has no data members, prefer using a namespace
 
+struct IntPair{
+    int first, second;
+    void print(){
+        std::cout<<"Pair("<<first<<", "<<second<<")\n";
+    }
+    bool isequal(IntPair a){
+        return (first== a.first) && (second == a.second);
+    }
+};
+
 int main(){
     Date date{4,10,21};
     date.print();
@@ -59,5 +69,12 @@ int main(){
     Foo f;
     f.printHi();    // required object to call
     Foos::printHii();   // no object needed with namespace
+    IntPair p1{1,2};
+    std::cout<<"p1: ";
+    p1.print();
+    IntPair p2{3, 4};
+    std::cout<<"p2: ";
+    p2.print();
+    
     return 0;
 }
