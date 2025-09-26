@@ -51,3 +51,12 @@ int main()
 
 	return 0;
 }
+
+/*
+t2 is a const object, so only const member functions can be 
+invoked on t2. If we make print() a non-const member function, 
+then t2 is not allowed to call it. This is because a non-const 
+member function could conceivably modify the implicit object, 
+which would be a violation of the constness of the const object 
+(t2 in this case).
+*/
