@@ -18,7 +18,6 @@ public:
     Derived(int value)
     :Base {value}
     {
-
     }
     int getValue() const {return m_value;}
 };
