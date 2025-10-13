@@ -12,6 +12,12 @@ public:
     : data{data},
     next{nullptr}
     {}
+
+    // multi data constructor
+    Node(int data, Node* next)
+    : data{data},
+    next{next}
+    {}
 };
 
 class LinkedList{
@@ -77,13 +83,18 @@ public:
     }
 };
 
+Node* insertHead(Node* head, int val){
+    Node* temp = new Node(val, head);
+    return temp;
+}
+
 int main(){
     LinkedList list;
 
     list.insertBegin(10);
     list.insertEnd(20);
     list.insertEnd(30);
-    list.insertPosition(15, 2);
+    list.insertPosition(15, 2); 
 
     std::cout << "List after insertions: ";
     list.display();
