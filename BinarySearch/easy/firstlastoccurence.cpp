@@ -4,8 +4,8 @@ of the target key. If the target is not found then return {-1,-1}.
 
 k = target
 n = size of the array
-TC - 
-SC - 
+TC - 2 x O(logN)
+SC - O(1)  
 */
 
 #include <iostream>
