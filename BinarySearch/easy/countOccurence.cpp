@@ -1,6 +1,9 @@
 /*
 You are given a sorted array containing N integers and a number X, you 
 have to find the occurrences of X in the given array.
+
+TC - O(2*logN), We are basically using the binary search algorithm twice.
+SC - O(1)
 */
 
 #include <bits/stdc++.h>
