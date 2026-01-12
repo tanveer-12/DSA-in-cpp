@@ -1,5 +1,7 @@
 /*  IMPLEMENTING QUEUE USING LINKED LISTS
 
+TC - O(1) for push, pop, peek operations
+SC - O(1)
 */
 
 #include <bits/stdc++.h>
